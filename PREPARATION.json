@@ -1,0 +1,72 @@
+{
+  "project": "vcd-state-ledger",
+  "observed": "2026-10-17T06:27:53.471303+00:00",
+  "platform": "linux",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "test_behavior"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "----------------------------------------------------------------------\nRan 20 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "."
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-deps",
+        "--wheel-dir",
+        "dist",
+        "."
+      ],
+      "exit": 0,
+      "stdout": "Processing ./.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: vcd-state-ledger\n  Building wheel for vcd-state-ledger (pyproject.toml): started\n  Building wheel for vcd-state-ledger (pyproject.toml): finished with status 'done'\n  Created wheel for vcd-state-ledger: filename=vcd_state_ledger-0.1.0-py3-none-any.whl size=4878 sha256=0c5cd5850d7f63df113a4a738d6b130ff9e93dd422fff7440e829be87c801fd5\n  Stored in directory: /tmp/pip-ephem-wheel-cache-x19h36vh/wheels/70/84/af/1ce2e53178993d27238c186ef5917a88fc159cdffc1046bddf\nSuccessfully built vcd-state-ledger\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/gh17-vcd-state-ledger/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "/workspace/scratch/5d784ffbbfd3/prepared-oct17/vcd-state-ledger/dist/vcd_state_ledger-0.1.0-py3-none-any.whl"
+      ],
+      "exit": 0,
+      "stdout": "Processing ./dist/vcd_state_ledger-0.1.0-py3-none-any.whl\nInstalling collected packages: vcd-state-ledger\nSuccessfully installed vcd-state-ledger-0.1.0\n",
+      "stderr": "\n[notice] A new release of pip is available: 25.0.1 -> 26.2.1\n[notice] To update, run: /tmp/gh17-vcd-state-ledger/bin/python -m pip install --upgrade pip\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_installed.py",
+        "/tmp/gh17-vcd-state-ledger/bin/python"
+      ],
+      "exit": 0,
+      "stdout": "{\"installed_command\": \"vcd-state-ledger\", \"outside_checkout\": true, \"source_identity_matched\": true, \"contract_checks\": \"passed\"}\n",
+      "stderr": ""
+    }
+  ],
+  "runtime_dependencies": [],
+  "remote_ci": "NOT_YET_PUBLISHED"
+}

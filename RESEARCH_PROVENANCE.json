@@ -1,0 +1,201 @@
+{
+  "comparables": [
+    {
+      "full": "gtkwave/gtkwave",
+      "url": "https://github.com/gtkwave/gtkwave",
+      "stars": 1033,
+      "default_branch": "master",
+      "pushed_at": "2026-10-12T04:06:19Z",
+      "updated_at": "2026-10-15T21:15:13Z",
+      "archived": false,
+      "license": "GPL-2.0",
+      "description": "GTKWave is a fully featured GTK+ based wave viewer for Unix and Win32 which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing.",
+      "observed": "2026-10-17T06:09:54.318Z",
+      "readme": {
+        "path": "README.md",
+        "sha": "458fd8b6ac6c4fa9aad479a231045c0c359172ba"
+      },
+      "issues": [
+        {
+          "number": 520,
+          "title": "Out-of-bounds array read in bsearch_node()/bsearch_vector() for single-entry signals (aix bsearch fix fallback)",
+          "url": "https://github.com/gtkwave/gtkwave/issues/520",
+          "pull_request": false
+        },
+        {
+          "number": 519,
+          "title": "WCP : Add support for get_cursor, cursor_set event and get_values ",
+          "url": "https://github.com/gtkwave/gtkwave/pull/519",
+          "pull_request": true
+        },
+        {
+          "number": 517,
+          "title": "macOS Homebrew: compilation fails w/ missing 'GObject-2.0.gir'; file",
+          "url": "https://github.com/gtkwave/gtkwave/issues/517",
+          "pull_request": false
+        },
+        {
+          "number": 516,
+          "title": "Build: support older GLib and static libgtkwave builds",
+          "url": "https://github.com/gtkwave/gtkwave/pull/516",
+          "pull_request": true
+        },
+        {
+          "number": 513,
+          "title": "vcd: recover EVCD port direction and drive strength",
+          "url": "https://github.com/gtkwave/gtkwave/pull/513",
+          "pull_request": true
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    },
+    {
+      "full": "cirosantilli/vcdvcd",
+      "url": "https://github.com/cirosantilli/vcdvcd",
+      "stars": 71,
+      "default_branch": "master",
+      "pushed_at": "2025-10-19T19:52:12Z",
+      "updated_at": "2026-09-26T18:11:23Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "description": "Python Verilog value change dump (VCD) parser library + the nifty vcdcat VCD command line pretty printer.",
+      "observed": "2026-10-17T06:09:54.299Z",
+      "readme": {
+        "path": "README.adoc",
+        "sha": "259fa43f51a61370f264b4ff8898ee25e92ca6c9"
+      },
+      "issues": [
+        {
+          "number": 37,
+          "title": "how to do bit slice on a signal ",
+          "url": "https://github.com/cirosantilli/vcdvcd/issues/37",
+          "pull_request": false
+        },
+        {
+          "number": 36,
+          "title": "vcdcat misses an input signal",
+          "url": "https://github.com/cirosantilli/vcdvcd/issues/36",
+          "pull_request": false
+        },
+        {
+          "number": 30,
+          "title": "Suggestion: Dynamic lookup mode",
+          "url": "https://github.com/cirosantilli/vcdvcd/issues/30",
+          "pull_request": false
+        },
+        {
+          "number": 17,
+          "title": "VCD with timestamps and value changes on the same line fails with \"ValueError: invalid literal for int() with base 10: '0  0! 0\"'\"",
+          "url": "https://github.com/cirosantilli/vcdvcd/issues/17",
+          "pull_request": false
+        },
+        {
+          "number": 8,
+          "title": "Added get_dumps and get_sorted_sig_dump functions",
+          "url": "https://github.com/cirosantilli/vcdvcd/pull/8",
+          "pull_request": true
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    },
+    {
+      "full": "ics-jku/wal",
+      "url": "https://github.com/ics-jku/wal",
+      "stars": 188,
+      "default_branch": "main",
+      "pushed_at": "2026-09-22T11:52:31Z",
+      "updated_at": "2026-10-11T14:18:51Z",
+      "archived": false,
+      "license": "BSD-3-Clause",
+      "description": "WAL enables programmable waveform analysis.",
+      "observed": "2026-10-17T06:09:54.303Z",
+      "readme": {
+        "path": "README.md",
+        "sha": "25d67538710791dd37156518d2c8547fcd94d5c1"
+      },
+      "issues": [
+        {
+          "number": 47,
+          "title": "Where is the source for the documentation?",
+          "url": "https://github.com/ics-jku/wal/issues/47",
+          "pull_request": false
+        },
+        {
+          "number": 46,
+          "title": "VCD parser memory inefficiency for large simulations",
+          "url": "https://github.com/ics-jku/wal/issues/46",
+          "pull_request": false
+        },
+        {
+          "number": 45,
+          "title": "feature/sparse vcd parser",
+          "url": "https://github.com/ics-jku/wal/pull/45",
+          "pull_request": true
+        },
+        {
+          "number": 44,
+          "title": "Fix KeyError in VCD trace parsing for undefined signal IDs",
+          "url": "https://github.com/ics-jku/wal/pull/44",
+          "pull_request": true
+        },
+        {
+          "number": 41,
+          "title": "variable server-start is undefined",
+          "url": "https://github.com/ics-jku/wal/issues/41",
+          "pull_request": false
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    }
+  ],
+  "code_references": [
+    {
+      "repo": "cirosantilli/vcdvcd",
+      "sha": "5b31f12f9d6244e87879d9b12db3602b3c3eecb5",
+      "url": "https://github.com/cirosantilli/vcdvcd/blob/master/vcdvcd/vcdvcd.py",
+      "observed": "2026-10-17T06:25:16.015Z"
+    }
+  ],
+  "queries": [
+    {
+      "query": "VCD waveform",
+      "url": "https://github.com/search?q=VCD+waveform&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:55.959Z"
+    },
+    {
+      "query": "mesh analysis",
+      "url": "https://github.com/search?q=mesh%20analysis&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:56.979Z"
+    },
+    {
+      "query": "modbus",
+      "url": "https://github.com/search?q=modbus&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:57.966Z"
+    },
+    {
+      "query": "cue splitter",
+      "url": "https://github.com/search?q=cue%20splitter&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:58.843Z"
+    },
+    {
+      "query": "PGN parser",
+      "url": "https://github.com/search?q=PGN%20parser&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:59.739Z"
+    },
+    {
+      "query": "3D data processing",
+      "url": "https://github.com/search?q=3D+data+processing&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:25:19.570Z"
+    },
+    {
+      "query": "modbus library",
+      "url": "https://github.com/search?q=modbus+library&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:26:25.149Z"
+    },
+    {
+      "query": "audio CD image",
+      "url": "https://github.com/search?q=audio+CD+image&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:26:31.848Z"
+    }
+  ]
+}
