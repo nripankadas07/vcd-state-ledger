@@ -1,0 +1,31 @@
+{
+  "repo": "vcd-state-ledger",
+  "module": "vcd_state_ledger",
+  "units": 20,
+  "capability": "Account for exact 0/1/x/z bit-time and transition evidence in small digital VCD captures.",
+  "user": "RTL verification engineers reviewing a short simulation capture.",
+  "pain": "A plot alone does not provide a reproducible unknown-state duration ledger across aliased signals.",
+  "query": "VCD waveform",
+  "leader": "gtkwave/gtkwave",
+  "comparables": [
+    "gtkwave/gtkwave",
+    "cirosantilli/vcdvcd",
+    "ics-jku/wal"
+  ],
+  "quick": "vcd-state-ledger example.vcd --end-tick 15",
+  "expected": "The example intentionally exits 1: bus unknown bit-time is 10 bit-ticks. Clock 0/1 durations are 10/5 ticks; bus 0/1/x durations are 10/10/10 bit-ticks. Aliases share one signal record.",
+  "contract": "ASCII VCD with one timescale, module scopes and wire/reg/logic variables. Binary and scalar values; widths 1\u2013256. Initial bits are x at tick zero. Initialization x-to-known counts as a value change; known scalar 0-to-1/1-to-0 counts as rising/falling evidence. Same-tick changes count but consume no duration. The last timestamp ends the interval unless --end-tick explicitly extends the final held values. Unknown bit-time includes x and z; all per-bit durations sum to width times end tick.",
+  "limits": "2 MiB, 250,000 tokens, 512 unique IDs, 2,000 names, 100,000 value events and scope depth 32. No real values, EVCD, FST, dump-on/off intervals, analog timing or power inference. This is a deliberately small capture parser, not a waveform viewer.",
+  "acceptance": "Exact duration conservation, aliases, same-tick glitches, scalar edges and x/z propagation; reject undeclared identifiers, invalid widths, incomplete scopes and decreasing timestamps.",
+  "notes": "GTKWave offers interactive waveform inspection and many more formats. vcdvcd exposes timestamps and alias references; WAL provides programmable waveform analysis. WAL issue 46 discusses large-capture memory; that is adjacent demand evidence, not a request for this tool or proof of an unresolved defect. Our bounded JSON accounting does not replace these systems.",
+  "alternatives": "Use GTKWave, script vcdvcd, or write a WAL analysis.",
+  "overlap": "The existing traceweave repository analyzes AI-agent JSONL traces. This project reads hardware Value Change Dump signal state and bit-time; it is not another JSONL trace formatter.",
+  "reference": "cirosantilli/vcdvcd",
+  "topics": [
+    "vcd",
+    "verilog",
+    "digital-design",
+    "python",
+    "waveform"
+  ]
+}

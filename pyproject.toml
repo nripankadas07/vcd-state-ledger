@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vcd-state-ledger"
+version = "0.1.0"
+description = "Account for exact 0/1/x/z bit-time and transition evidence in small digital VCD captures."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+vcd-state-ledger = "vcd_state_ledger:main"
+
+[tool.setuptools]
+py-modules = ["vcd_state_ledger"]
